@@ -43,8 +43,8 @@ You need to configure your `tests/test.yml` file to use the Jenkins role. Here i
     - ./roles/jenkins
 ```
 
-This configuration specifies that Ansible should use the `jenkins` role to set up the Jenkins server.
+### Then run the ansible role using ansible-playbook commands
 
----
+```
+ansible-playbook -i roles/jenkins/tests/inventory.ini roles/jenkins/tests/test.yml
 
-Feel free to adjust the IP addresses, user names, and file paths as necessary for your environment.
